@@ -1,0 +1,15 @@
+<div class="header">
+  <h1 class="title">Our Pricing</h1>
+  <div class="container">
+    <span class="container__option">Annually</span>
+    <div class="container-button" (click)="change()">
+      <div [class]="myClass ? button2 : button1"></div>
+    </div>
+    <span class="container__option">Monthly</span>
+  </div>
+</div>
+<app-main
+[moneyBasic]="moneyBasic"
+[moneyProfessional]="moneyProfessional"
+[moneyMaster]="moneyMaster"
+></app-main>

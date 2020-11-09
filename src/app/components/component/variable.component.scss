@@ -1,0 +1,26 @@
+// Colores
+
+$colorPrimary:linear-gradient(45deg,hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+
+$colorNeutral1: hsl(240, 78%, 98%);
+$colorNeutral2: hsl(234, 14%, 74%);
+$colorNeutral3: hsl(233, 13%, 49%);
+$colorNeutral4: hsl(232, 13%, 33%);
+
+
+//Fuente
+$font: 'Montserrat', sans-serif;
+
+
+//Mixins de queries
+@mixin medium {
+    @media only screen and (max-width: 1000px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media only screen and (max-width: 700px) {
+        @content;
+    }
+}

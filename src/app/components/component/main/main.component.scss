@@ -1,0 +1,86 @@
+@import '../variable.component.scss';
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 288px);
+    column-gap: 5px;
+    justify-content: center;
+    @include medium {
+        grid-template-columns: repeat(3, 30%);
+
+    }
+    @include mobile {
+        display: block;
+        padding: 0 10%;
+    }
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0 10%;
+    box-shadow: 0 2px 5px 0 rgb(192, 192, 192);
+    transition-duration: .4s;
+    @include mobile{
+        padding-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .subtitle{
+        text-align: center;
+        font-family: $font;
+        font-size: 1em;
+        margin: 1.5rem 0;
+        color: $colorNeutral3;
+    }
+    .dolar{
+        font-size: 1.7rem;
+        vertical-align: middle;
+    }
+    .money{
+        text-align: center;
+        margin: 0;
+        font-family: $font;
+        font-size: 3rem;
+        margin: 1.3rem 0;
+        color: $colorNeutral4;
+    }
+    .card__content{
+        text-align: center;
+        font-family: $font;
+        font-size: .8em;
+        margin: 1rem 0;
+        color: $colorNeutral3;
+    }
+    .button{
+        width: 100%;
+        height: 3em;
+        border-radius: 5px;
+        border: none;
+        font-family: $font;
+        font-size: .9rem;
+        margin: 1.5em 0;
+        color: #fff;
+        background: $colorPrimary;
+        cursor: pointer;
+    }
+    &:hover{
+        background: $colorPrimary;
+        transform: scale(1.1, 1.1);
+        transition-duration: .4s;
+        .subtitle{
+            color: #fff;
+        }
+        .money{
+            color: #fff;
+        }
+        .card__content{
+            color: #fff;
+        }
+        .button{
+            background: #fff;
+            color: hsl(237, 63%, 64%);
+        }
+    }
+}
+

@@ -1,0 +1,51 @@
+@import '../variable.component.scss';
+
+.header{
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+    .title{
+        font-family: $font;
+        font-weight: 700;
+        color: $colorNeutral4;
+        margin-bottom: 1.5rem;
+    }
+    .container__option{
+        font-family: $font;
+        color: $colorNeutral2;
+        margin: 0 15px;
+    }
+
+    .container-button{
+        position: relative;
+        width: 45px;
+        height: 1.6rem;
+        background: $colorPrimary;
+        border-radius: 20px;
+        vertical-align: bottom;
+        display: inline-block;
+        cursor: pointer;
+        .button1{
+            margin: 0;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #fff;
+            transition-duration: .4s;
+        }
+        .button2{
+            margin: 0;
+            position: absolute;
+            top: 10%;
+            left: 45%;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #fff;
+            transition-duration: .4s;
+        }
+    }
+}
